@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    background: #f2f8ff;
+    padding: 0;
+    margin: 0;
+}
+#container 
+{
+    height: 400px;
+    width: 400px;
+    top: 50%;
+    background: #fff;
+    border: 3px solid #e2ebf4;
+    border-radius: 25px;
+    position: relative;
+}
+#container img
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}   
+#container h1 {
+    color: #1479ff;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 16%;
+    left: 35%;
+}
+#container #image_container
+{
+  width: 140px;
+  height: 140px;
+  background: #e2ebf9;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#container #image_container #image_bg
+{
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.89);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#buttons button 
+{
+    font-size: 35px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid #7c707030;
+    cursor: pointer;
+}
+button:hover
+{
+    box-shadow: 0 10px 10px 0 rgba(129, 129, 129, 0.24), 0 17px 50px 0 rgba(139, 139, 139, 0.19);
+}
+#generate
+{
+    height: 50px;
+    width: 160px;
+    background: rgb(92, 90, 228);
+    position: absolute;
+    float: left;
+    right: 0;
+    bottom: 10%;
+    left: 30%;
+}
+#buttons img
+{
+    height: 35px;
+    width: 32px;
+    top :12%;
+    left: 10%;
+}
+#buttons input
+{
+    border : none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
+    position: absolute;
+    width: 250px;
+    bottom :27%;
+    left: 20%;
+}
+#talk
+{
+    border : none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(92, 90, 228);
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+    position: absolute;
+    width: 620px;
+    top:-9%;
+    left: 2%;
+}
+#copy
+{
+    position: absolute;
+    right : 120px;
+    background: rgb(130, 240, 166);
+    width: 40px;
+    height: 50px;
+    bottom :10%;
+    left: 73%;
+}
+.footer {  
+    position: fixed;  
+    bottom: 5px; 
+    align-items: center;
+    place-items: center;
+    width: 95%;
+    font-size: 10px;  
+    background-color: none;  
+    color: rgb(56, 56, 56);  
+    text-align: center; 
+} 
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(92, 90, 228); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+  }
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
